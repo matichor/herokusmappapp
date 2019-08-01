@@ -1,7 +1,7 @@
 package com.herokusmallapp.services;
 
-import com.engineer.entity.Runner;
-import com.engineer.repositories.RunnerRepository;
+import com.herokusmallapp.entity.Runner;
+import com.herokusmallapp.repositories.RunnerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
