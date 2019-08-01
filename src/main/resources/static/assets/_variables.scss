@@ -1,0 +1,103 @@
+@font-face {
+  font-family: Roboto;
+  src: url(https://fonts.googleapis.com/css?family=Roboto);
+}
+
+/* Colors */
+$black: #000000;
+$dark: #4c4c4e;
+$light-dark: #988c8c;
+$white: #fff;
+$ecru: #eee;
+$orange: #f38835;
+$dark-orange: #fc7c1a;
+$medium-gray: #a0a0a0;
+$ontax-selected-menu: #e2e1e7;
+$ontax-orange-btn: #f38835;
+$ontax-orange-btn2: #dc5e25;
+$ontax-green-btn: #33b147;
+$ontax-light-gray-btn: #d3d3d3;
+$ontax-red-btn: #f5382c;
+$ontax-disabled-btn: #d3d4d6;
+$ontax-yellow-btn: #ffca28;
+$ontax-green-logicon: #2fb045;
+$ontax-orange-logo: #f47d20;
+$ontax-menuitem-icon: #a0a0a0;
+$ontax-table-background: #ffffff;
+$ontax-button-font-color: #ffffff;
+$menu-padding-set: 0px 0px 0px 20px;
+$menu-width: 200px;
+$menu-width-pd: 217px;
+$button-base-height: 30px;
+$base-border-radius: 2px;
+$base-menu-color: #9fbb19;
+$gird-row-even-background: #FAFAFA;
+$common-fontawesome-color: #a0a0a0;
+$ontax-nav-item-text-shadow: rgba(0, 0, 0, 0.05);
+$ontax-nav-item-hover-arrow: #30303f;
+$ontax-nav-item-light-gray: #30303f;
+$ontax-info-color: #4c6ef5;
+/* Information dailog */
+$ontax-dialog-border-green: #2c9720;
+$ontax-dialog-font-color: #555;
+/* Font Weight */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-regular-plus: 500;
+$font-weight-bold: 600;
+/* Font Control Color */
+$form-control-font-muted: #495057;
+$form-control-button-default: #e9ecef;
+$form-control-button-default-font: #212529;
+$form-control-button-default-hover: #e2e6ea;
+$form-control-button-default-border: #dae0e5;
+
+$form-control-button-default-active: #e2e6ea;
+$form-control-button-default-active: #dae0e5;
+
+/* Notification Color Configuration
+        fc-font color, bg-background color, br- border color */
+//  1.) SUCCESS
+$notifi-success-fc: #ffffff;
+$notifi-success-bg: #33b147;
+$notifi-success-br: unquote('#33b148ab');
+// 2.) PROCCESS
+$notifi-progress-fc: #ffffff;
+$notifi-progress-bg: #63dd76;
+$notifi-progress-br: unquote('#63dd75a4');
+// 3.) WARNING
+$notifi-wating-fc: #ffffff;
+$notifi-wating-bg: #ffca28;;
+$notifi-wating-br: unquote('#ffc928e1');
+// 4.) ERROR
+$notifi-failure-fc: #ffffff;
+$notifi-failure-bg: #f5382c;
+$notifi-failure-br: unquote('#f5c6cbc5');
+
+
+/* Table Grid Styles
+        1.) Table Options */
+$grid-table-striped: odd;
+$table-expander-border-color: #f38835;
+
+
+$color-white: #ffffff;
+$color-support: #9AD940;
+$color-support-dark: #7BAE33;
+$color-support-light: #AEE166;
+$color-support-lighter: #C3E882;
+
+$color-red: #e3202e;
+$color-red-dark: #d0021b;
+
+/* Side Nav Menu */
+$nav-logo: #333132;
+$nav-logo-border-bottom: #bcbaba;
+$nav-block: #333742;
+$nav-title-border: #52555f;
+$nav-title-active: #464a55;
+$nav-title-hover: #f38835;
+$nav-title-active-border: #f38835;
+$item-active: #40434c;
+$item-active-border-left: #52555f;
+$nav-icon-active: #f38835;

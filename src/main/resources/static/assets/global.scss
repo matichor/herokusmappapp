@@ -1,0 +1,165 @@
+@import "variables";
+
+@font-face {
+  font-family: Quicksand;
+  src: url(/fonts/Quicksand-Regular.ttf) format("truetype");
+}
+
+@mixin font {
+  font-weight: 400;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 20px;
+  font-family: Quicksand;
+  font-stretch: 100%;
+  font-style: normal;
+}
+
+.common-fontawesome-icon-color {
+  color: $common-fontawesome-color;
+}
+.menu-item-icon-active-color {
+  color: #ffff;
+}
+.menu-item-title-color {
+  color: #30303f;
+}
+
+.menu-item-active-color {
+  background-color: $ontax-selected-menu;
+}
+.gird-header-title-color {
+  color: $common-fontawesome-color;
+}
+
+/* Modal dialog main style */
+::ng-deep .modal-dialog {
+  min-width: 80vw;
+  .modal-content {
+    border-radius: 0.5rem;
+    outline: 0;
+    border: 2px solid #f38835;
+    .modal-header {
+      background: $ontax-orange-btn;
+      color: $white;
+      button {
+        outline: 0;
+      }
+      .modal-title {
+        @include font;
+      }
+    }
+    .modal-body {
+      perfect-scrollbar {
+        .ps {
+          .ps-content {
+            max-height: 75vh !important;
+          }
+        }
+      }
+      pre /deep/{
+        color: #000000;
+        span {white-space: normal;}
+        .string { color: green; }
+        .number { color: blue; }
+        .boolean { color: blue; }
+        .null { color: magenta; }
+        .key { color: #f92672; }
+      }
+    }
+    .modal-footer{
+      button.orange{
+       background-color: #f38835;
+       color: white;
+      }
+    }
+  }
+}
+
+.jaspero__confirmation {
+  margin-top: 34vh;
+  .jaspero__confirmation_dialog {
+    border-radius: 0.5rem;
+    outline: 0;
+    border: 2px solid #f38835;
+    bottom: unset;
+    .jaspero__confirmation_dialog-title {
+      text-transform: none;
+      background: #f38835;
+      padding: 15px 15px;
+      color: #ffffff;
+      @include font;
+    }
+    .jaspero__confirmation_dialog-actions {
+      .primary {
+        background: #f38835;
+      }
+    }
+  }
+}
+/* range Datapicker */
+input[type="text"]#chooseDate:not(.browser-default) {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 50%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+/* NSP block */
+.check-nsp-btn {
+  background-color: $ontax-orange-btn;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: $ontax-button-font-color;
+  border: 0;
+}
+.input-group-addon {
+  padding: 6px 12px;
+  height: calc(2.25rem + 2px);
+  font-weight: 400;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  background-color: #333742;
+  border: 1px solid #ccc;
+}
+#check-nsp {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  input.ng-invalid {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+  }
+  small{
+    display: inline-block;
+    float: right;
+  }
+}
+
+.noselect {
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.clear{
+  clear:both;
+}
+

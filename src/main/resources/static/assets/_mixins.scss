@@ -1,0 +1,84 @@
+@import "variables";
+/* Tooltips */
+@mixin tt-config($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+}
+
+@mixin tt-ar-config($border-left-color) {
+  left: 0;
+  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-left-color: $border-left-color;
+}
+
+@mixin tt-total-conf($bg-color, $color) {
+  .tooltip-inner {
+    @include tt-config($bg-color, $color);
+  }
+  .arrow {
+    &::before {
+      @include tt-ar-config($bg-color);
+    }
+  }
+}
+/* Tables */
+@mixin table-radius($outer-color, $inner-color, $radius, $size) {
+  border-collapse: collapse;
+  border-radius: $radius;
+  border-style: hidden;
+  box-shadow: 0 0 0 $size $outer-color;
+  td {
+    border: $size solid $inner-color;
+  }
+  tr:last-child td:first-child {
+    border-bottom-left-radius: $radius;
+  }
+  tr:last-child td:last-child {
+    border-bottom-right-radius: $radius;
+  }
+}
+
+/* information modal */
+@mixin information-modal($border-color, $color) {
+  color: $color;
+  border: 2px solid $border-color;
+}
+
+@mixin btn-color($bg-color, $font-color) {
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+@mixin required() {
+  color: $ontax-red-btn;
+  font-weight: bold;
+}
+
+@mixin btn-focus-active($font-color, $bg-color, $border-color) {
+  color: $font-color;
+  background-color: $bg-color;
+  border-color: $border-color;
+}
+
+@mixin nav-animation($duration) {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height $duration ease-out;
+  -moz-transition: max-height $duration ease-out;
+  transition: max-height $duration ease-out;
+}
+
+@mixin nav-animation-open($duration) {
+  overflow-y: auto;
+  overflow: hidden;
+  max-height: 1000px;
+  -webkit-transition: max-height $duration ease-in 0s;
+  -moz-transition: max-height $duration ease-in 0s;
+  -o-transition: max-height $duration ease-in 0s;
+  transition: max-height $duration ease-in;
+}
+
+@mixin required() {
+  color: $ontax-red-btn;
+  font-weight: bold;
+}
