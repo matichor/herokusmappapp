@@ -1,6 +1,7 @@
 package com.herokusmallapp.repositories;
 
-import com.engineer.entity.News;
+
+import com.herokusmallapp.entity.News;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
