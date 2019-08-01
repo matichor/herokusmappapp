@@ -44,12 +44,12 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         registry.addViewController("/notFound").setViewName("forward:/index.html");
     }
 
-    @Bean
-    public EmbeddedServletContainerCustomizer containerCustomizer() {
-        return container -> {
-            container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND,
-                    "/notFound"));
-        };
-    }
+//    @Bean
+//    public EmbeddedServletContainerCustomizer containerCustomizer() {
+//        return container -> {
+//            container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND,
+//                    "/notFound"));
+//        };
+//    }
 
 }
